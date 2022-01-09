@@ -5,17 +5,17 @@ int main()
 {
 	string s;
 	cin >> s;
-	// for (int i = 0; i <s.size() ; ++i)
-	// {
-	// 	// Lower to Upper
-	// 	if(s[i] >= 'a' and s[i]<= 'z'){
-	// 		s[i] = s[i]-'a'+'A';
-	// 	}
-	// 	// Upper to Lower
-	// 	else{
-	// 		s[i] = s[i]-'A'+'a';
-	// 	}
-	// }
+	for (int i = 0; i <s.size() ; ++i)
+	{
+		// Lower to Upper
+		if(s[i] >= 'a' and s[i]<= 'z'){
+			s[i] = s[i]-'a'+'A';
+		}
+		// Upper to Lower
+		else{
+			s[i] = s[i]-'A'+'a';
+		}
+	}
 
 
 	// OR using STL
@@ -25,7 +25,7 @@ int main()
 
 
 	// Lower to Upper
-	transform(s.begin(), s.end(), s.begin(), ::toupper);
+// 	transform(s.begin(), s.end(), s.begin(), ::toupper);
 
 	cout<<s<<'\n';
 	return 0;
